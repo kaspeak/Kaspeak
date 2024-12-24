@@ -1,6 +1,6 @@
 # Changelog
 
-## [v0.1.0-apha] — 2024-12-24
+## [v0.1.0-alpha] — 2024-12-24
 
 ### Overview
 - **Kaspeak** is a decentralized chat that runs on the Kaspa TN11 network and supports both text and voice communication.
