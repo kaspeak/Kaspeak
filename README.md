@@ -1,7 +1,7 @@
 # Kaspeak
 
 **No one asked for this, but we did it!**  
-Meet Kaspeak: the world’s first (probably) **voice (!) chat** in an open blockchain DAG. We also added a regular chat because the voice one barely works.  
+Meet Kaspeak: the world’s first (probably) **voice (!) chat** in an open blockdag. We also added a regular chat because the voice one barely works.  
 Here is the simplest way to experience the full power and speed of Kaspa TN11, including 10 bps. All your messages (voice or text) are stored exclusively in blocks and spread across the entire network at a rate of 10 blocks per second. The ability to record arbitrary data inside blocks sparked this idea and led to its implementation in the form of Kaspeak.
 
 ## Table of Contents
@@ -49,7 +49,7 @@ Here is the simplest way to experience the full power and speed of Kaspa TN11, i
   - Voice and text are only visible and audible within the chosen channel.  
   - Occupy any free channel and explore Kaspa’s capabilities with a friend.  
 - If you have no friends, that’s unfortunate—but it won’t stop you from experiencing Kaspa’s speed!  
-  - Flip the **Listen Self** toggle to hear your own voice coming straight from the depths of the block DAG.
+  - Flip the **Listen Self** toggle to hear your own voice coming straight from the depths of the blockdag.
 
 ---
 
@@ -79,7 +79,7 @@ Kaspeak was primarily created to demonstrate to developers and users worldwide t
 ## Disclaimer
 
 - Kaspeak is fully decentralized and uses publicly available Kaspa TN11 nodes.  
-- We cannot control, remove, or modify any data transmitted in the block DAG.  
+- We cannot control, remove, or modify any data transmitted in the blockdag.  
 - We have no servers and do not store any of your data; however, please maintain discretion and refrain from using this decentralized service to place illegal information or advertising.
 
 ---
