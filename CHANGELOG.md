@@ -1,5 +1,15 @@
 # Changelog
 
+## [v0.1.1-alpha] — 2025-01-05
+- **Source code** is now available! Build and Run **Kaspeak** by yourself 💻
+- Added **validation** of incoming and outgoing **messages**
+- You can now **view messages in channels** from the moment you connect to a node. **When you switch channel, the message history is no longer deleted**
+- The logic of connecting to nodes and wallet creation has been redesigned. Now a **single node** is used to send and receive messages. Fixed several errors at application startup
+- The application logs have been translated into English
+- Added script for bundling '.app' for macOS
+- Notification sound has been updated
+- Now you can see the current balance when the airdrop is performed by the application
+
 ## [v0.1.0-alpha] — 2024-12-24
 
 ### Overview
