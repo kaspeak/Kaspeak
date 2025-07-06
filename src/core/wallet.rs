@@ -12,6 +12,7 @@ use kaspa_wallet_core::account::Account;
 use kaspa_wallet_core::error::Error;
 use kaspa_wallet_core::prelude::{Language, Mnemonic, Secret};
 use kaspa_wallet_core::result::Result as KaspaResult;
+use kaspa_wallet_core::storage::keydata::PrvKeyDataVariantKind;
 
 /// Пример «сервиса» для кошелька.
 /// Хранит ссылку на `kaspa_wallet_core::Wallet`, `account`,
@@ -100,6 +101,7 @@ impl WalletService {
             .clone()
             .send(
                 PaymentDestination::PaymentOutputs(PaymentOutputs::from((destination, final_amount))),
+                Option::None,
                 Fees::SenderPays(APP_STATE.get_fee_size()?),
                 payload,
                 self.wallet_secret.clone(),
@@ -113,7 +115,7 @@ impl WalletService {
             Ok((summary, _tx_ids)) => {
                 // Коэффициент для перевода из атомарных единиц в KAS
                 let utxos = summary.aggregated_utxos();
-                let fees_atomic = summary.aggregated_fees();
+                let fees_atomic = summary.aggregate_fees();
                 let tx_count = summary.number_of_generated_transactions();
 
                 // final_transaction_amount: Option<u64>
@@ -231,7 +233,7 @@ async fn init_account_from_mnemonic(
         .as_api()
         .prv_key_data_create(
             wallet_secret.clone(),
-            PrvKeyDataCreateArgs::new(Some(account_name.to_string()), None, Secret::from(account_mnemonic.phrase_string())),
+            PrvKeyDataCreateArgs::new(Some(account_name.to_string()), None, Secret::from(account_mnemonic.phrase_string()), PrvKeyDataVariantKind::Mnemonic),
         )
         .await?;
     let wallet_guard = wallet.guard();

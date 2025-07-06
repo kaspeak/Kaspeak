@@ -30,9 +30,9 @@ log = "0.4.22"
 env_logger = "0.11.5"
 
 # rusty-kaspa
-kaspa-wallet-core = { git = "https://github.com/kaspanet/rusty-kaspa.git", branch = "kip10-tn11-hf" }
-kaspa-consensus-core = { git = "https://github.com/kaspanet/rusty-kaspa.git", branch = "kip10-tn11-hf" }
-kaspa-wrpc-client = { git = "https://github.com/kaspanet/rusty-kaspa.git", branch = "kip10-tn11-hf" }
+kaspa-wallet-core = { git = "https://github.com/kaspanet/rusty-kaspa.git", branch = "stable" }
+kaspa-consensus-core = { git = "https://github.com/kaspanet/rusty-kaspa.git", branch = "stable" }
+kaspa-wrpc-client = { git = "https://github.com/kaspanet/rusty-kaspa.git", branch = "stable" }
 
 # workflow для управления асинхронностью
 workflow-core = "0.18.0"
@@ -61,7 +61,7 @@ dashmap = "6.1.0"
 config = "0.15.3"
 sha2 = "0.10.8"
 lazy_static = "1.5.0"
-chrono = "0.4.39"
+chrono = "0.4.41"
 zstd = "0.13.2"
 image = "0.24.9"
 uuid = "1.11.0"

@@ -109,7 +109,7 @@ pub const MAX_CHANNEL_CAPACITY: usize = 250;
 pub const MINIMUM_AIRDROP_BALANCE_TKAS: f64 = 10.0f64;
 
 // АЙДИ СЕТИ
-pub const NETWORK_ID: NetworkId = NetworkId::with_suffix(NetworkType::Testnet, 11);
+pub const NETWORK_ID: NetworkId = NetworkId::with_suffix(NetworkType::Testnet, 10);
 
 // ПРЕФИКС АДРЕСА
 pub const PREFIX: &str = "kaspatest:";
