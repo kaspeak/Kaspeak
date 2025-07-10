@@ -1,4 +1,8 @@
 # Changelog
+## [v0.1.2-alpha] — 2025-07-11
+- Fixed Application startup
+- Kaspa version bumped up
+- Changed default network setting to TESTNET-10
 
 ## [v0.1.1-alpha] — 2025-01-05
 - **Source code** is now available! Build and Run **Kaspeak** by yourself 💻
